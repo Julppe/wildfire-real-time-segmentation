@@ -159,15 +159,13 @@ def main():
     args.batch_size = 1
     loss_list = []
     
-    eval_set = WFSeg(args.data_dir, args.mode, manual_masks=True, boundary=True, args=args)
-    args.eval_dir = 'uav_manual'
-    uav_set = WFSeg(args.data_dir, args.mode, manual_masks=True, boundary=True, args=args)
-    args.eval_dir = 'wf_manual'
+    #eval_set = WFSeg(args.data_dir, args.mode, manual_masks=True, boundary=True, args=args)
+    #args.eval_dir = 'uav_manual'
+    #uav_set = WFSeg(args.data_dir, args.mode, manual_masks=True, boundary=True, args=args)
+    #args.eval_dir = 'wf_manual'
     wf_set = WFSeg(args.data_dir, args.mode, manual_masks=True, boundary=True, args=args)
 
-    sets = [(eval_set,'Combined data'),
-            (uav_set,'UAV data'), 
-            (wf_set,'AI For Mankind data')]
+    sets = [(wf_set,'AI For Mankind data')]
     #print(len(eval_loader))
 
     if len(args.single_model) == 0:

@@ -1,10 +1,17 @@
 # Detecting Wildfires on UAVs with Real-time Segmentation Trained by Larger Teacher Models
 
-Code for the Detecting Wildfires on UAVs with Real-time Segmentation Trained by Larger Teacher Models. To recreate results from the paper go to [Quick Start](#quick-start) after [Installation](#installation). The training is **unavailable** in this supplementary material due to size limits but the full data will be available at the date of publication.
+Code for the Detecting Wildfires on UAVs with Real-time Segmentation Trained by Larger Teacher Models. To recreate results from the paper go to [Quick Start](#quick-start) after [Installation](#installation). Currently only a portion of the data is available. The rest will be available at a later date.
 
 ## Results and checkpoints
 
-The following tables of results are replicable with the code. Click the PIDNet model text to download the model weights.
+Currently only the AI For Mankind data result, shown here in the first table, can be replicated due to data availability. However, the rest of the pretrained models can also be used and tested with the linked data or available smoke images.
+
+SAM supervised dataset separated tests (Table 4. row 5.):
+
+| Teacher Model | Student Model | UAV mIoU | AI For Mankind mIoU |
+|---------------|---------------|----------|---------------------|
+| SAM | [PIDNet-S](https://drive.google.com/file/d/11QJKRjko9rIOpasyoo4Q9U6qzmRuAVg-/view?usp=drive_link) | 0.689 | 0.498 |
+
 
 Model comparison SAM supervised results (Table 2. Rows 5, 10, 15 and 20):
 
@@ -14,13 +21,6 @@ Model comparison SAM supervised results (Table 2. Rows 5, 10, 15 and 20):
 | SAM           | [PIDNet-S](https://drive.google.com/file/d/11QJKRjko9rIOpasyoo4Q9U6qzmRuAVg-/view?usp=drive_link)      |   0.594   | 
 | SAM           | [PIDNet-M](https://drive.google.com/file/d/1ny_6mTnhPArqCnacGuidj9uc-tkTAokE/view?usp=drive_link)      |   0.606   | 
 | SAM           | [PIDNet-L](https://drive.google.com/file/d/1ACFYUGqBHWo4wfxKJUdr9BwSjdTI11i5/view?usp=drive_link)      |   0.594   | 
-
-
-SAM supervised dataset separated tests (Table 4. row 5.):
-
-| Teacher Model | Student Model | UAV mIoU | AI For Mankind mIoU |
-|---------------|---------------|----------|---------------------|
-| SAM | [PIDNet-S](https://drive.google.com/file/d/11QJKRjko9rIOpasyoo4Q9U6qzmRuAVg-/view?usp=drive_link) | 0.689 | 0.498 |
 
 Final SAM model with loss function ablation (Table 6. row 3.):
 
@@ -33,7 +33,9 @@ Final SAM model with loss function ablation (Table 6. row 3.):
 
 The code has been developed in a Python 3.8 environment. For other Python versions package conflicts may occur. To create the environment with Conda (To install Conda follow the [official instructions](https://conda.io/projects/conda/en/latest/user-guide/install/index.html)):
 
-`cd wildfire_rt_segmentation`
+`git clone https://gitlab.com/fgi_nls/public/wildfire-real-time-segmentation.git`
+
+`cd wildfire-real-time-segmentation`
 
 `conda create -n wildfire_seg python=3.8`
 
@@ -59,11 +61,7 @@ All code can be run on a CPU with the argument `--device cpu`.
 
 Download the model checkpoints from [Results and checkpoints](#results-and-checkpoints) and place them in the checkpoints folder.
 
-Then:
-
-`python eval.py`
-
-To recreate individual model results:
+Then to recreate individual model results:
 
 `python eval.py --single-model [model-checkpoint-path] --model-size [s,m,l]`
 
@@ -86,7 +84,7 @@ To generate masks for custom data follow the data organisation described in [Mod
 
 ### Model training
 
-The training is **unavailable** in this supplementary material due to size limits but the full data will be available at the date of publication. The training code is still provided as a reference and could be adapted for custom data.
+The training with full data is currently **unavailable** due to data availability but will be updated later. The training code is still provided as a reference and could be adapted for custom data. The training can also be tested with the AI For Mankind data.
 
 To train:
 
