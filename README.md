@@ -1,5 +1,7 @@
 # Detecting Wildfires on UAVs with Real-time Segmentation Trained by Larger Teacher Models
 
+![Real-time Segmentation Trained by Larger Teacher Models overview](sam_guided_seg.png)
+
 Code for the Detecting Wildfires on UAVs with Real-time Segmentation Trained by Larger Teacher Models. To recreate results from the paper go to [Quick Start](#quick-start) after [Installation](#installation). Currently only a portion of the data is available. The rest will be available at a later date.
 
 ## Results and checkpoints
