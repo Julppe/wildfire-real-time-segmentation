@@ -1,0 +1,12 @@
+torch
+torchvision
+opencv-python
+pandas
+matplotlib
+natsort
+scikit-image
+einops
+yacs
+torchmetrics
+torcheval
+tqdm
