@@ -53,7 +53,7 @@ On Windows systems to enable CUDA support follow the [official Pytorch instructi
 
 ## Quick start
 
-Before running the python scripts follow the installation instructions in [Installation](#installation).
+Before running the python scripts follow the installation instructions in [Installation](#installation). Download the available [AI For Mankind Data](https://drive.google.com/file/d/1mbthNoeld-DnfrBxH8Ok9V1w5G52qC3P/view?usp=sharing) and extract it to main directory.
 
 All code can be run on a CPU with the argument `--device cpu`.
 
