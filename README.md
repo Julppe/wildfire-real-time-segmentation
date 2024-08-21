@@ -2,7 +2,7 @@
 
 ![Real-time Segmentation Trained by Larger Teacher Models overview](sam_guided_seg.png)
 
-Code for the Detecting Wildfires on UAVs with Real-time Segmentation Trained by Larger Teacher Models. To recreate results from the paper go to [Quick Start](#quick-start) after [Installation](#installation). Currently only a portion of the data is available. The rest will be available at a later date.
+Code for [Detecting Wildfires on UAVs with Real-time Segmentation Trained by Larger Teacher Models](https://arxiv.org/pdf/2408.10843). To recreate results from the paper go to [Quick Start](#quick-start) after [Installation](#installation). Currently only a portion of the data is available. The rest will be available at a later date.
 
 ## Results and checkpoints
 
@@ -119,3 +119,18 @@ To generate the pseudo-labels with SAM refer to [Generate masks](#generate-masks
 To generate model output visualisations:
 
 `python infer.py --input-image [image path]`
+
+
+### Citation
+
+```
+@misc{pesonen2024uavrtseg,
+      title={Detecting Wildfires on UAVs with Real-time Segmentation Trained by Larger Teacher Models}, 
+      author={Julius Pesonen and Teemu Hakala and Väinö Karjalainen and Niko Koivumäki and Lauri Markelin and Anna-Maria Raita-Hakola and Juha Suomalainen and Ilkka Pölönen and Eija Honkavaara},
+      year={2024},
+      eprint={2408.10843},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2408.10843}, 
+}
+```
