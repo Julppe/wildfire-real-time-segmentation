@@ -121,7 +121,7 @@ To generate model output visualisations:
 `python infer.py --input-image [image path]`
 
 
-### Citation
+## Citation
 
 ```
 @misc{pesonen2024uavrtseg,
@@ -134,3 +134,8 @@ To generate model output visualisations:
       url={https://arxiv.org/abs/2408.10843}, 
 }
 ```
+
+## Acknowledgement
+
+* The inference model and its training implementation is based on and largely built on top of the code of [PIDNet](https://github.com/XuJiacong/PIDNet)
+* The introduced training method relies on supervision from [Segment Anything](https://github.com/facebookresearch/segment-anything)
