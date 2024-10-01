@@ -4,6 +4,8 @@
 
 Code for [Detecting Wildfires on UAVs with Real-time Segmentation Trained by Larger Teacher Models](https://arxiv.org/pdf/2408.10843). To recreate results from the paper go to [Quick Start](#quick-start) after [Installation](#installation). Currently only a portion of the data is available. The rest will be available at a later date.
 
+Rehosted from the original [Gitlab repo](https://gitlab.com/fgi_nls/public/wildfire-real-time-segmentation) which is updated more frequently.
+
 ## Results and checkpoints
 
 Currently only the AI For Mankind data result, shown here in the first table, can be replicated due to data availability. However, the rest of the pretrained models can also be used and tested with the linked data or available smoke images.
